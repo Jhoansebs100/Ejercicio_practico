@@ -56,9 +56,16 @@ while True:
         print("Estado:",estado)
         sumprom=sumprom+prom
         estudiantes+=1
-     if opcion == "2":
+     elif opcion == "2":
+         if estudiantes == 0:
+             print(f"El total de estudiantes registrados es de: 0 y el promedio total del grupo es de: 0")
+         else:
+             print(f"El total de estudiantes registrados es de: {estudiantes} y el promedio total del grupo es de: {sumprom/estudiantes}") 
          break
-print(f"El total de estudiantes registrados es de: {estudiantes} y el promedio total del grupo es de: {sumprom/estudiantes}")        
+     else:
+         print("Opción no válida, por favor selecciona una opción del menú.")
+
+       
           
           
         
